@@ -23,7 +23,7 @@ class Main:
             ip = input(f': ')
             r = requests.get(f"https://api.hackertarget.com/geoip/?q={ip}")
             print(r.json())
-            input('Press enter to go back')
+            input("Press Enter to go back...")
             os.system('cls||clear')
             Main.main()
 
@@ -33,7 +33,7 @@ class Main:
             Main.main()
 
         if option == "3":
-            tokenbrute()
+            TokenBrute()
 
 
 class TokenBrute:
@@ -62,5 +62,4 @@ class TokenBrute:
 
 
 if __name__ == "__main__":
-    input()
     Main.main()
